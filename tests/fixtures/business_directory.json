@@ -1,0 +1,84 @@
+{
+ "run_id": "cmvksijla0u9r41o5wjk4wna7",
+ "slug": "business_directory",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "query": "autonoleggio",
+  "location": "Milano",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": false,
+ "finished_at": "2026-10-23T09:51:21.860Z",
+ "results": [
+  {
+   "city": "Milano",
+   "name": "Awy Luxury",
+   "rank": 1,
+   "phone": "02 35985140",
+   "phones": [
+    "02 35985140"
+   ],
+   "source": "paginegialle",
+   "street": "Corso Monforte, 16",
+   "address": "Corso Monforte, 16 - 20122 Milano (MI)",
+   "reviews": null,
+   "website": "https://www.awyluxury.com/",
+   "category": "autonoleggio",
+   "province": "MI",
+   "whatsapp": null,
+   "source_id": "34b3e8e3-ecf2-4fdd-8918-8ee705534f33",
+   "sponsored": true,
+   "description": "Awy Luxury:noleggio e vendita di auto di alto livello a Milano.",
+   "postal_code": "20122",
+   "profile_url": "https://www.paginegialle.it/awy-luxury-milano",
+   "listing_type": "paid",
+   "opening_hours": [
+    "Mo 09:00 - 19:00",
+    "Tu 09:00 - 19:00",
+    "We 09:00 - 19:00",
+    "Th 09:00 - 19:00",
+    "Fr 09:00 - 19:00"
+   ]
+  },
+  {
+   "city": "Milano",
+   "name": "Autozitra",
+   "rank": 2,
+   "phone": "02 48952426",
+   "phones": [
+    "02 48952426"
+   ],
+   "source": "paginegialle",
+   "street": "Via Francesco Gonin, 56",
+   "address": "Via Francesco Gonin, 56 - 20147 Milano (MI)",
+   "reviews": 230,
+   "website": null,
+   "category": "Autonoleggio",
+   "province": "MI",
+   "whatsapp": null,
+   "source_id": "2D420D9A-E9A6-6A7B-E050-A8C08D26345C",
+   "sponsored": true,
+   "description": "La concessionaria Autozitra srl vi attende a Milano per proporvi auto nuove e usate e servizi di noleggio di auto per eventi e a lungo termine.",
+   "postal_code": "20147",
+   "profile_url": "https://www.paginegialle.it/autozitramilano",
+   "listing_type": "paid",
+   "opening_hours": [
+    "Mo 09:30 - 12:30",
+    "Mo 15:00 - 19:00",
+    "Tu 09:30 - 12:30",
+    "Tu 15:00 - 19:00",
+    "We 09:30 - 12:30",
+    "We 15:00 - 19:00",
+    "Th 09:30 - 12:30",
+    "Th 15:00 - 19:00",
+    "Fr 09:30 - 12:30",
+    "Fr 15:00 - 19:00",
+    "Sa 09:30 - 12:30",
+    "Sa 15:00 - 18:00"
+   ]
+  }
+ ],
+ "_note": "Real run of 2026-10-23 with the default source (Pagine Gialle); two of the three businesses are kept here (the third lists only a mobile number), and the first description is cut after its first sentence. Phones are the businesses' landlines."
+}

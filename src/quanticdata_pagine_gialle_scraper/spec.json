@@ -1,0 +1,139 @@
+{
+ "cli": "pagine-gialle-scraper",
+ "name": "Pagine Gialle Scraper",
+ "version": "0.1.0",
+ "description": "Pagine Gialle scraper for Python and the command line: Italian businesses for a category and a comune, with the email the owner registered, Partita IVA, verified phone, website, opening hours and address, plus Pagine Bianche listings, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/pagine-gialle-scraper",
+  "page": "https://quanticdata.io/collectors/?utm_source=github&utm_medium=cli&utm_campaign=pagine-gialle-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=pagine-gialle-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=pagine-gialle-scraper"
+ },
+ "commands": [
+  {
+   "name": "profiles",
+   "collector": "paginegialle_profiles",
+   "method": "profiles",
+   "help": "Pagine Gialle profiles for a category in a comune, with email and VAT id",
+   "description": "Italian businesses for a category and a comune, read from their Pagine Gialle profile: the email the owner registered, VAT id, verified phone, opening hours.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "name",
+    "city",
+    "phone",
+    "email",
+    "vat_id",
+    "website"
+   ],
+   "sample": "paginegialle_profiles",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "What the businesses do, as Pagine Gialle names it — e.g. \"dentisti\", \"idraulico\", \"ristoranti\".",
+     "arg": "query"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": true,
+     "description": "Italian comune, e.g. \"Torino\", \"Monza\".",
+     "arg": "location"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many profiles to deliver at most (1–300). You pay only for delivered profiles.",
+     "min": 1,
+     "max": 300,
+     "default": 25,
+     "arg": "max_results"
+    }
+   ]
+  },
+  {
+   "name": "directory",
+   "collector": "business_directory",
+   "method": "directory",
+   "help": "Pagine Gialle and Pagine Bianche listings for a category in a comune",
+   "description": "Businesses listed in Italian directories (Pagine Gialle, Pagine Bianche) for a category and a comune or quartiere, including the small ones Google misses.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "name",
+    "category",
+    "city",
+    "phone",
+    "website",
+    "listing_type"
+   ],
+   "sample": "business_directory",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "What the businesses do, as the directory categorises it — e.g. \"autonoleggio\", \"dentista\", \"idraulico\".",
+     "arg": "query"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": true,
+     "description": "Comune or quartiere — e.g. \"Milano\", \"Milano Quartiere Affori\", \"Monza\".",
+     "arg": "location"
+    },
+    {
+     "name": "sources",
+     "type": "string[]",
+     "required": false,
+     "description": "Directories to read: paginegialle (default), paginebianche, or both, e.g. --sources paginegialle paginebianche.",
+     "enum": [
+      "paginegialle",
+      "paginebianche"
+     ],
+     "arg": "sources"
+    },
+    {
+     "name": "only_with_phone",
+     "type": "boolean",
+     "required": false,
+     "description": "Drop and do not bill businesses with no published phone number.",
+     "default": false,
+     "arg": "only_with_phone"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many businesses to deliver at most (1–100). You pay only for delivered businesses.",
+     "min": 1,
+     "max": 100,
+     "default": 25,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "run_id": "cmvksie2o0u9i41o5f3e2wsq4",
+ "slug": "paginegialle_profiles",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "query": "dentisti",
+  "location": "Torino",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": false,
+ "finished_at": "2026-10-23T09:51:20.384Z",
+ "results": [
+  {
+   "city": "Torino",
+   "name": "Studio Medico Odontoiatrico Bosco",
+   "rank": 2,
+   "email": "studiogbosco@gmail.com",
+   "phone": "+39 011 655355",
+   "rating": 5,
+   "region": "Piemonte",
+   "street": "Via Madama Cristina, 6",
+   "tax_id": null,
+   "vat_id": "11247730010",
+   "reviews": 1,
+   "socials": {},
+   "website": "https://www.studiogbosco.it",
+   "category": "Dentist",
+   "latitude": 45.05985,
+   "province": "TO",
+   "services": null,
+   "longitude": 7.68439,
+   "sponsored": true,
+   "legal_name": "STUDIO DI ODONTOIATRIA BOSCO",
+   "description": "Lo Studio Odontoiatrico Bosco è un centro di eccellenza specializzato in chirurgia maxillo-facciale e nella cura di patologie dell'articolazione temporo-mandibolare (A.T.M.).",
+   "postal_code": "10125",
+   "profile_url": "https://www.paginegialle.it/studiodentisticobosco",
+   "opening_hours": [
+    "Mo 14:30 - 20:00",
+    "Tu 14:30 - 20:00",
+    "We 14:30 - 20:00",
+    "Th 14:30 - 20:00",
+    "Fr 14:30 - 17:00"
+   ],
+   "payment_methods": null,
+   "listing_category": "dentisti"
+  }
+ ],
+ "_note": "Real run of 2026-10-23; one of the three profiles is kept here (the others carry a mobile number or a personal codice fiscale), and the profile description is cut after its first sentence. The email is the one the practice registered on its Pagine Gialle profile; the phone is the practice's landline."
+}
